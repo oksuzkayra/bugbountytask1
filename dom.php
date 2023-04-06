@@ -1,0 +1,31 @@
+<html>
+  <head></head>
+
+  <body>
+	<h1>DOM Nedir?</h1>
+	<p>DOM (Document Object Module) HTML dökümanları içerisinde bulunan nesnelere kolaylıkla erişim sağlamak ve üzerinde işlemler yapabilmek için tasarlanan bir modeldir. DOM ile HTML dosyamızda bulunan her şeye erişim sağlayabiliriz.
+
+HTML dosyasında bulunan bütün öğeler, DOM üzerinde bir nesne olarak görülür. DOM modelin ismi, document ise bu nesnelerin kapsayıcısıdır. Bu kapsayıcı içerisinde bulunan html evet bildiğiniz html etiketi head, body nesnelerinin içerisinde bulunan diğer nesnelerin kapsayıcısıdır. Head ve body etiketleri de içerisinde bulunan diğer nesnelerin kapsayıcılarıdır. Aynı örüntü üzerinde bu durum tekrar eder.
+	</p>
+	<img src="dom.gif">
+	<p>DOM kullanarak HTML belgesi içerisindeki nesnelerle işlemler yapabileceğimizi söylemiştik. Şimdi bir örnek ile bunu gerçekleştirelim. </p>
+
+	<h3 id="demo">Bu metin değişecek!</h3>
+	<button onclick="myFunction()">Değiştir</button>
+
+	<script>
+		function myFunction() {
+			document.getElementById('demo').innerHTML = "DOM kullanılarak değiştirilmiştir."
+
+		}
+		
+	</script>
+
+	<p><b>Yani sonuç olarak HTML belgemiz bir document, DOM ise bu belgenin içerisindeki nesneleri(düğümleri) değiştirmek veya üzerinde farklı işlemler yapmak için tasarlanmış bir modeldir.</b></p>
+
+  </body>
+
+
+
+
+</html>
