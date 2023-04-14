@@ -1,5 +1,10 @@
 <html>
 <head>
+	<style>
+		p  {font-size: 160%}
+		h1 {text-align: center}
+		li {font-size: 140%}
+	</style>
 </head>
 
 <body>
