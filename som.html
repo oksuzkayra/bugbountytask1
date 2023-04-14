@@ -1,0 +1,31 @@
+<html>
+  <head>
+	<title>Same-Origin Policy</title>
+	<style>
+		p  {font-size: 160%}
+		h1 {text-align: center}
+	</style>
+  </head>
+
+
+  <body>
+	<h1>Same-Origin Policy</h1>
+
+	<p>
+	  Bir origin tarafından yüklenen bir belgenin veya komut dosyasının başka bir originden gelen bir kaynakla nasıl etkileşime girebileceğini kısıtlayan kurallar bütünüdür. Kullanılan protokol, URL ve erişilen port'un birleşiminden oluşan yapıya <b>origin</b> denir. Bu kurallara göre eğer sayfaların originleri farklı ise birbirlerinin kaynaklarına erişemeyeceklerdir.<br><br>
+
+	Protokol : http://<br>
+	URL 	 : www.example.com<br>
+	Port	 : 80<br>
+	</p>
+
+	<h1>Same-Origin Policy neden var?</h1>	
+	<p>
+ 	  Tarayıcılar bir domaine yapılan isteklerde, o domain ile ilgili cookie'leri de request'e ilişkilendirir ve sunucuya gönderir. Kullanıcı oturum açtıktan sonra cookie'ler browser'da saklanır. Kullanıcının kendi tarayıcısında açtığı kötü niyetli bir site, mevcut session cookie bilgisini kullanarak arka planda ilgili siteye istek gönderebilir. <b>Same-Origin Policy</b> bunları önlemek için oluşturulmuştur. Eğer farklı origin'e sahip bir siteye erişmek istiyorsak ilgili sitenin <b>CORS</b> başlıklarının uygun şekilde ayarlanması gerekir.
+	</p>
+
+
+  </body>
+
+
+</html>
