@@ -1,0 +1,51 @@
+<html>
+  <head>
+	<title>Sink/Source</title>
+	<style>
+		h1 {text-align: center}
+		p {font-size: 150%}
+		li {font-size: 140%}
+	</style>
+  </head>
+
+
+  <body>
+	<h1>Sink/Source Nedir?</h1>
+
+	<h2>1)Source Nedir?</h2>
+
+	<p>
+		Source fonksiyonu, sayfanın herhangi bir yerinden girdi alan Javascript özelliği veya fonksiyonudur. URL'nin sorgu dizesinden girdi okuduğu için <b>location.search</b> source örnek olarak verilebilir. 
+
+	</p>
+
+	<ul>
+		<li>document.URL</li>
+		<li>document.documentURI</li>
+		<li>document.baseURI</li>
+		<li>document.cookie</li>
+		<li>document.referrer</li>
+		<li>location.search</li>
+	</ul>
+
+	<h2>2)Sink Nedir</h2>
+
+	<p>
+		Sink, kendisine saldırgan tarafından kontrol edilen veriler gönderildiğinde istenmeyen etkilere neden olabilen, potansiyel olarak tehlikeli Javascript fonksiyonudur. Fonksiyon, girdiyi güvenlik kontrolleri olmadan çıktı olarak ekrana geri döndürürse, bu bir sink olarak kabul edilir. HTML sayfasının içeriğini kendisine verilen şekilde değiştiren, <b>innerHTML</b> özelliği sink olabilir. Yaygın sinkler şunlardır:  
+	</p>
+	
+	<ul>
+		<li>document.write()</li>
+		<li>document.writeln()</li>
+		<li>document.domain</li>
+		<li>element.innerHTML</li>
+		<li>element.outerHTML</li>
+		<li>element.insertAdjacentHTML</li>
+		<li>element.onevent</li>
+	</ul>	
+
+
+
+  </body>
+
+</html>
