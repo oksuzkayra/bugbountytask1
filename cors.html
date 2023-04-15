@@ -1,0 +1,60 @@
+<html>
+  <head>
+	<title>CORS</title>
+	<style>
+		h1 {text-align: center}
+		p {font-size: 160%}
+		li {font-size: 140%}
+		code {font-size: 140%}
+		.codeline {
+		  color: white; 
+		  background-color: #002140; 
+		  padding: 20px;
+		  width: 40%;
+		}
+	</style>
+  </head>
+
+  <body>
+	<h1>Cross-Origin Resource Sharing Nedir?</h1>
+
+	<p>
+	  Kökenler arası kaynak paylaşımı anlamına gelir. Ek HTTP başlıkları kullanılarak bir origin'de çalışan web uygulamasının, farklı origin'de yer alan web uygulamasına erişim izni kontrolünü sağlayan HTTP Header tabanlı mekanizmadır. Web uygulaması, tarayıcı üzerinden farklı bir origin'e herhangi bir istek gönderirse <b>cross-origin HTTP isteği</b> oluşturmuş olur.<br><br>
+
+	  Sonuç olarak <b>Same-Origin Policy</b> ile zıt çalışır diyebiliriz. SOP erişimi engeller, CORS ise izin verir. Aşağıda örnek olarak verilen istek türleri için CORS ayarlaması yapılabilir. 
+	</p>	
+	
+	<ul>
+	  <li>Ajax çağrıları adını verdiğimiz XMLHttpRequest ve fetch() API çağrıları</li>
+	  <li>Web fontlarının kullanımı (CSS üzerinden @font-face ile yapılan çağrımlar)</li>
+	</ul>
+
+	<p>
+	  Örnek olarak <i>kayra.org</i> üzerinden <i>example.com</i>'a bir istek gönderirsek, tarayıcı tarafından <b>Origin</b> header'ına kayra.org URL'inin otomatik atandığını görebiliriz.<br>
+
+	</p>	
+	<div class="codeline">
+		<code>
+	  	  GET /posts HTTP/1.1<br>
+	  	  Host: https://example.com<br>
+	  	  Origin: https://www.kayra.org<br>
+	  	  ...
+		</code>
+	</div>
+
+	<p>
+	  CORS ayarlaması yapılmış sunucu <b>Origin</b> header'ını kontrol eder. Eğer ilgili origin'in izni var ise <b>Access-Control-Allow-Origin</b> header'ına ilgili origin'i atar ve sonuç olarak aşağıdaki gibi bir response gönderir.
+	</p>	
+	
+	<div class="codeline">
+		<code>
+		  HTTP/1.1 200 OK<br>
+		  Access-Control-Allow-Origin: https://www.kayra.org<br>
+		  ...
+		</code>
+	</div>
+
+
+
+  </body>
+</html>
